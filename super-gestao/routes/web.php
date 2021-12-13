@@ -30,7 +30,7 @@ Route::get('/login', function(){return 'login';});
 //agrupamento de rotas
 Route::prefix('/app')->group(function(){
     Route::get('/clientes', function(){return 'clientes';})->name('app.clientes');
-    Route::get('/fornecedores', function(){return 'fornecedores';})->name('app.fornecedores');
+    Route::get('/fornecedores', [\App\Http\Controllers\FornecedorController::class,'index'])->name('app.fornecedores');
     Route::get('/produtos', function(){return 'produtods';})->name('app.produtos');
 });
 
@@ -46,3 +46,5 @@ Route::fallback(function(){
     echo 'A rota acessada não existe. <a href="'.route('site.index').'">Clique aqui para ir ao início</a>';
 });
 
+//passando parâmetros para a rota
+Route::get('/teste/{p1}/{p2}',[\App\Http\Controllers\TesteController::class,'teste'])->name('teste');
