@@ -20,8 +20,13 @@ class FornecedorController extends Controller
                 'ddd' => '32',
                 'cnpj' => 'asd',
                 'telefone' => '00000-0000'
-            ]
-        ];
+            ],
+        2 => ['nome' => 'Fornecedor 3',
+                'status' => 'S',
+                'ddd' => '32',
+                'cnpj' => 'asd',
+                'telefone' => '00000-0000'
+        ]];
         
         return view('app.fornecedor.index',compact('fornecedores'));
     }
