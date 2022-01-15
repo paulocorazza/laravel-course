@@ -31,11 +31,11 @@ class FornecedorController extends Controller
                     'nome_abreviado' => 'Power'
             ],
             3 => ['nome' => 'Paula Tejando',
-            'status' => 'S',
-            'ddd' => '32',
-            'cnpj' => '37.431.456.507/0001-00',
-            'telefone' => '00000-0000',
-            'nome_abreviado' => 'Paula'
+                 'status' => 'S',
+                 'ddd' => '32',
+                 'cnpj' => '37.431.456.507/0001-00',
+                 'telefone' => '00000-0000',
+                 'nome_abreviado' => 'Paula'
             ],
         ];
 

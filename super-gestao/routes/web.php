@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 //laravel 8 ou superior
 Route::get('/', [\App\Http\Controllers\PrincipalController::class,'principal'])->name('site.index');
-Route::get('/sobre',[\App\Http\Controllers\SobreNosController::class,'sobreNos'])->name('site.sobre');
+Route::get('/sobre',[\App\Http\Controllers\SobreNosController::class,'sobreNos'])->name('site.sobre-nos');
 Route::get('/contato',[\App\Http\Controllers\ContatoController::class,'contato'])->name('site.contato');
 Route::get('/login', function(){return 'login';});
 
